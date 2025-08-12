@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desa KarangHarja - Sistem Informasi Desa</title>
+    <title>Desa KarangHarja - Sambutan & Sejarah</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,7 +11,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#home" class="navbar-brand">
+            <a href="#sambutan" class="navbar-brand">
                 <img src="/placeholder.svg?height=30&width=30" alt="Logo Desa" class="navbar-logo">
                 Desa KarangHarja
             </a>
@@ -22,34 +22,17 @@
             </button>
             <div class="navbar-menu" id="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="#home">Home</a></li>
-                    <!-- Added new navigation items for Sambutan and Sejarah -->
+                    <!-- Updated navigation to only show Sambutan and Sejarah -->
                     <li><a href="#sambutan">Sambutan</a></li>
                     <li><a href="#sejarah">Sejarah</a></li>
-                    <li><a href="#struktur">Struktur</a></li>
-                    <li><a href="#maps">Maps</a></li>
-                    <li><a href="#kegiatan">Kegiatan</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <img src="/placeholder.svg?height=200&width=200" alt="Logo Desa KarangHarja" class="logo-img">
-                <h1 class="hero-title">Desa KarangHarja</h1>
-                <p class="hero-subtitle">Sistem Informasi Desa</p>
-                <p class="hero-description">
-                    Selamat datang di website resmi Desa KarangHarja. 
-                    Temukan informasi terkini tentang pemerintahan, kegiatan, dan layanan desa kami.
-                </p>
-            </div>
-        </div>
-    </section>
+    <!-- Removed Hero/Home section completely -->
 
-    <!-- Updated Sambutan Kepala Desa section -->
+    <!-- Sambutan Kepala Desa section -->
     <section id="sambutan" class="sambutan-section">
         <div class="container">
             <div class="section-header">
@@ -111,7 +94,7 @@
         </div>
     </section>
 
-    <!-- Updated Sejarah Desa section -->
+    <!-- Sejarah Desa section -->
     <section id="sejarah" class="sejarah-section">
         <div class="container">
             <div class="section-header">
@@ -328,144 +311,7 @@
         </div>
     </section>
 
-    <!-- Organizational Structure Section -->
-    <section id="struktur" class="org-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Struktur Organisasi</h2>
-                <div class="header-line"></div>
-                <p class="section-description">
-                    Struktur pemerintahan dan organisasi Desa KarangHarja yang berkomitmen melayani masyarakat
-                </p>
-            </div>
-            
-            <div class="org-chart">
-                <!-- Kepala Desa -->
-                <div class="org-level">
-                    <div class="org-position kepala-desa">
-                        <div class="org-card">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Kepala Desa" class="org-photo">
-                            <h3>SUKARMA</h3>
-                            <p class="org-title">Kepala Desa</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Sekretaris Desa -->
-                <div class="org-level">
-                    <div class="org-position">
-                        <div class="org-card">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Sekretaris Desa" class="org-photo">
-                            <h3>Siti Aminah, S.AP</h3>
-                            <p class="org-title">Sekretaris Desa</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Kepala Urusan -->
-                <div class="org-level">
-                    <div class="org-staff-grid cols-3">
-                        <div class="org-position">
-                            <div class="org-card">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Kaur Pemerintahan" class="org-photo">
-                                <h3>Ahmad Fauzi</h3>
-                                <p class="org-title">Kaur Pemerintahan</p>
-                            </div>
-                        </div>
-                        <div class="org-position">
-                            <div class="org-card">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Kaur Pembangunan" class="org-photo">
-                                <h3>Budi Santoso</h3>
-                                <p class="org-title">Kaur Pembangunan</p>
-                            </div>
-                        </div>
-                        <div class="org-position">
-                            <div class="org-card">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Kaur Kesejahteraan" class="org-photo">
-                                <h3>Dewi Sartika</h3>
-                                <p class="org-title">Kaur Kesejahteraan</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Kepala Dusun -->
-                <div class="org-level">
-                    <h4 class="org-section-title">Kepala Dusun</h4>
-                    <div class="org-staff-grid cols-2">
-                        <div class="org-position">
-                            <div class="org-card">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Kadus 1" class="org-photo">
-                                <h3>Joko Widodo</h3>
-                                <p class="org-title">Kepala Dusun I</p>
-                            </div>
-                        </div>
-                        <div class="org-position">
-                            <div class="org-card">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Kadus 2" class="org-photo">
-                                <h3>Suryadi</h3>
-                                <p class="org-title">Kepala Dusun II</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Maps Section -->
-    <section id="maps" class="map-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Peta Lokasi</h2>
-                <div class="header-line white"></div>
-                <p class="section-description" style="color: rgba(255, 255, 255, 0.9);">
-                    Lokasi geografis Desa KarangHarja dan fasilitas-fasilitas penting di sekitarnya
-                </p>
-            </div>
-            
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.1944901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonas%2C%20Gambir%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sen!2sid!4v1635724073795!5m2!1sen!2sid"
-                    class="map-iframe"
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Activities Section -->
-    <section id="kegiatan" class="activities-section">
-        <div class="decorative-elements">
-            <div class="decorative-circle green"></div>
-            <div class="decorative-circle blue"></div>
-            <div class="decorative-circle purple"></div>
-        </div>
-        
-        <div class="container">
-            <div class="section-header-activities">
-                <div class="calendar-icon">
-                    <i class="fas fa-calendar-alt"></i>
-                </div>
-                <h2 class="section-title-activities">Kegiatan Desa</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">
-                    Berbagai kegiatan dan program yang dilaksanakan untuk kemajuan dan kesejahteraan masyarakat Desa KarangHarja
-                </p>
-            </div>
-            
-            <div class="empty-activities">
-                <div class="empty-icon">
-                    <i class="fas fa-calendar-times"></i>
-                </div>
-                <h3>Belum Ada Kegiatan Terjadwal</h3>
-                <p>Saat ini belum ada kegiatan yang terjadwal. Pantau terus website ini untuk informasi kegiatan terbaru dari Desa KarangHarja.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Removed Struktur, Maps, and Kegiatan sections completely -->
 
     <script src="script.js"></script>
 </body>
