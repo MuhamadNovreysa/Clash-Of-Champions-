@@ -214,30 +214,35 @@ body {
 }
 
 .sambutan-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
   max-width: 72rem;
   margin: 0 auto;
-  align-items: start;
   position: relative;
   z-index: 1;
 }
 
-.kepala-desa-profile {
-  text-align: center;
+.sambutan-card {
   background: white;
-  padding: 2.5rem;
   border-radius: 1.5rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
   transform: translateY(0);
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.kepala-desa-profile:hover {
+.sambutan-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.kepala-desa-profile {
+  text-align: center;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
 }
 
 .photo-container {
@@ -314,12 +319,9 @@ body {
 }
 
 .sambutan-text {
-  background: white;
   padding: 3rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: white;
 }
 
 .quote-decoration {
@@ -841,8 +843,26 @@ body {
   }
 
   .sambutan-content {
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .kepala-desa-profile {
+    flex: 0 0 350px;
+    border-bottom: none;
+    border-right: 1px solid rgba(229, 231, 235, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sambutan-text {
+    flex: 1;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .kepala-desa-photo {
@@ -850,38 +870,14 @@ body {
     height: 19rem;
   }
 
-  .sambutan-text {
-    padding: 3.5rem;
+  .quote-decoration {
+    top: -2rem;
+    left: 3rem;
   }
 
   .main-message {
     font-size: 1.125rem;
-  }
-
-  .timeline::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .timeline-item {
-    width: 45%;
-    padding-left: 0;
-    padding-right: 2rem;
-  }
-
-  .timeline-item:nth-child(even) {
-    left: 55%;
-    padding-left: 2rem;
-    padding-right: 0;
-  }
-
-  .timeline-period {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .sejarah-stats {
-    grid-template-columns: repeat(4, 1fr);
+    text-align: justify;
   }
 }
 
